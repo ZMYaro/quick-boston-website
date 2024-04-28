@@ -6,6 +6,7 @@ body {
 	font-family: 'Poppins', sans-serif;
 }
 
+
 /* ================ Typography ================ */
 
 a {
@@ -58,7 +59,8 @@ p {
 	}
 }
 
-/* ================ Header ================ */
+
+/* ================ Page header ================ */
 
 #page-header {
 	position: fixed;
@@ -76,6 +78,7 @@ p {
 	
 	z-index: 2;
 }
+
 .quick-logo {
 	height: 4.25rem; /* 68px default */
 }
@@ -93,6 +96,12 @@ p {
 		height: 3rem;
 		fill: currentColor;
 	}
+
+#intro-section {
+	/* Componsate for header height. */
+	padding-top: calc(4vh + 4.25rem);
+}
+
 
 /* ================ Content sections ================ */
 
@@ -114,7 +123,7 @@ section {
 	color: black;
 }
 
-.columns {
+.multi-column-list {
 	/* Unset <ul> defaults. */
 	list-style-type: none;
 	padding: 0;
@@ -123,23 +132,18 @@ section {
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 }
-	.columns li {
+	.multi-column-list li {
 		box-sizing: border-box;
 		min-width: 16rem; /* 256px default */
 		
 		padding: 1rem;
 	}
-		.columns li img {
+		.multi-column-list li img {
 			display: block;
 			margin: 0 auto;
 			max-width: 100%;
 			max-height: 200px;
 		}
-
-#intro-section {
-	/* Componsate for header height. */
-	padding-top: calc(4vh + 4.25rem);
-}
 
 #meet-ups-list h3,
 #meet-ups-list p {
@@ -159,6 +163,7 @@ section {
 
 @media (min-width: 768px) {
 	#intro-section {
+		/* Increase padding on intro section in wide windows. */
 		padding: 12.5vh 12.5vw;
 	}
 }
