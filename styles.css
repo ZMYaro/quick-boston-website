@@ -134,7 +134,8 @@ section {
 }
 	.multi-column-list li {
 		box-sizing: border-box;
-		min-width: 16rem; /* 256px default */
+		width: 20rem; /* 320px default */
+		max-width: 100%;
 		
 		padding: 1rem;
 	}
