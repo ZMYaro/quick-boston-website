@@ -25,18 +25,18 @@ h1,
 h2,
 h3 {
 	font-family: 'Helvetica', sans-serif;
-	font-size: 2.625rem; /* 42px default */
 	font-weight: normal;
 }
 	h1,
 	h2 {
+		font-size: 2.625rem; /* 42px default */
 		text-align: center;
 	}
 	h1 {
 		font-style: italic;
 	}
 	h3 {
-		font-size: 1.875rem;
+		font-size: 1.625rem; /* 26px default */
 	}
 
 p {
@@ -53,8 +53,8 @@ p {
 
 @media (min-width: 768px) {
 	h1,
-	h2,
-	h3 {
+	h2 {
+		/* Increase heading sizes in wider windows. */
 		font-size: 3rem; /* 48px default */
 	}
 }
@@ -163,7 +163,7 @@ section {
 
 @media (min-width: 768px) {
 	#intro-section {
-		/* Increase padding on intro section in wide windows. */
+		/* Increase padding on intro section in wider windows. */
 		padding: 12.5vh 12.5vw;
 	}
 }
